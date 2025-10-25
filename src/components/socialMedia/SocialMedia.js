@@ -54,7 +54,7 @@ export default function socialMedia() {
           <i className="fab fa-gitlab"></i>
           <span></span>
         </a>
-      ) : null}
+      ) : false}
 
       {socialMediaLinks.facebook ? (
         <a
@@ -100,6 +100,18 @@ export default function socialMedia() {
           rel="noopener noreferrer"
         >
           <i className="fab fa-medium"></i>
+          <span></span>
+        </a>
+      ) : null}
+
+      {socialMediaLinks.whatsapp ? (
+        <a
+          href={socialMediaLinks.whatsapp}
+          className="icon-button whatsapp"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i className="fab fa-whatsapp"></i>
           <span></span>
         </a>
       ) : null}
